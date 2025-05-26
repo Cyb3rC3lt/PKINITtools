@@ -259,7 +259,7 @@ class GETPAC(object):
             self.printPac(plainText, specialkey)
 
 # Process command-line arguments.
-if __name__ == '__main__':
+def main():
     logger.init()
     print(version.BANNER)
 
@@ -303,3 +303,6 @@ if __name__ == '__main__':
             import traceback
             traceback.print_exc()
         logging.error(str(e))
+
+if __name__ == "__main__":
+    main()
